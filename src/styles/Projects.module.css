@@ -1,0 +1,175 @@
+#projects {
+}
+
+.project__list {
+  /* margin-top: 50rem; */
+  height: 100%;
+  width: 100vw;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project {
+  /* outline: 2px solid #6369d1;
+  outline-offset: 2px; */
+  background: #d8d4f2;
+  border-radius: var(--border-radius);
+  display: flex;
+  color: black;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  width: 90%;
+}
+
+.project:nth-child(even) {
+  /* background: #d8d4f2; */
+  /* background: #6369d1; */
+
+}
+
+.project > * {
+  margin-top: .6rem;
+  font-family: Poppins, sans-serif;
+}
+
+.project__title {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 0;
+}
+
+.project__description {
+  text-align: center;
+  font-size: 1rem;
+}
+
+.project__links {
+  /* width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+.inDev {
+  font-weight: 400;
+}
+
+.project__link {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.project__link * {
+  margin: 0 .3rem;
+}
+
+.builtWith {
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.mobileTechnologies {
+  margin-top: 0;
+  align-self: center;
+  /* font-size: 2rem; */
+  text-align: center;
+}
+
+.project__desktopTechnologies {
+  list-style: none;
+  display: none;
+}
+
+
+
+@media (min-width: 45rem) {
+  .project__list {
+    display: block;
+  }
+  .project {
+    border-radius: 0 var(--border-radius) var(--border-radius) 0;
+    width: 80%;
+    /* max-width: 68rem; */
+    display: grid;
+    grid-template-areas: "dev dev video"
+                         "title title video"
+                         "desc desc video"
+                         "built built video"
+                         "tech tech video"
+                         "git git video"
+                         ;
+  }
+
+  .project:nth-child(odd) {
+  /* background: #6369d1; */
+
+  }
+
+  .project:nth-child(even) {
+    float: right;
+  background: #6369d1;
+
+    border-radius: var(--border-radius) 0 0 var(--border-radius);
+    grid-template-areas: "video video dev"
+                         "video title title"
+                         "video desc desc"
+                         "video built built"
+                         "video tech tech"
+                         "video git git";
+    /* width: 100%; */
+  }
+
+  .project__title {
+    grid-area: title;
+  }
+
+  .project__description {
+    grid-area: desc;
+    padding: 0 1.5rem;
+  }
+
+  .builtWith {
+    grid-area: built;
+    display: block;
+    text-align: center;
+    align-self: last baseline;
+    padding-right: 1.5rem;
+  }
+
+  .project__desktopTechnologies1 {
+    grid-area: tech;
+    display: block;
+    text-align: right;
+    padding-right: 1.5rem;
+  }
+
+  .project__video {
+    grid-area: video;
+    justify-self: right;
+  }
+
+  .mobileTechnologies {
+    /* display: none; */
+    grid-area: tech;
+    align-self: first baseline;
+    padding: 0 3rem;
+    /* justify-self: center; */
+  }
+
+  .project__links {
+    grid-area: git;
+    text-align: center;
+    justify-self: center;
+  }
+
+  .inDev {
+    grid-area: dev;
+    justify-self: center;
+  }
+}

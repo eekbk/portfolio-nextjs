@@ -1,0 +1,31 @@
+.pageContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  padding: 0 1.5rem;
+  /* overflow: scroll; */
+}
+
+.links {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+}
+
+.cardHeader {
+  color: gray;
+  text-align: center;
+  margin-bottom: .8rem;
+  font-size: 1.3rem;
+}
