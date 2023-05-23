@@ -116,7 +116,7 @@
   background: #6369d1;
 
     border-radius: var(--border-radius) 0 0 var(--border-radius);
-    grid-template-areas: "video video dev"
+    grid-template-areas: "video dev dev"
                          "video title title"
                          "video desc desc"
                          "video built built"
