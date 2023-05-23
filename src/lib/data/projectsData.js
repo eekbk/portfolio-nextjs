@@ -61,5 +61,5 @@ export const projectThree = {
     'The portfolio site you are looking at RIGHT NOW',
   technologies: ['NextJS', 'React', 'CSS Modules', 'Nodemailer', 'Material UI'],
   imgSrc: '/spaceballs_gif.gif',
-  repo: '/'
+  repo: 'https://github.com/eekbk/portfolio-nextjs.git'
 }
