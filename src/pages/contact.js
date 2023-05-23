@@ -91,7 +91,12 @@ function Contact() {
             />
           ))}
           <CardActions>
-            <Button type="submit" value="Submit">
+            <Button
+              className={styles.button}
+              type="submit"
+              value="Submit"
+              variant="contained"
+            >
               Send
             </Button>
           </CardActions>

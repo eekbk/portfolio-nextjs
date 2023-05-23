@@ -29,3 +29,11 @@
   margin-bottom: .8rem;
   font-size: 1.3rem;
 }
+
+.button {
+  background: #6369d1;
+}
+
+.button:hover {
+  background: #ffc857;
+}
