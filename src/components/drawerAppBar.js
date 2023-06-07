@@ -62,7 +62,7 @@ function DrawerAppBar(props) {
   return (
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />
-      <AppBar className='navbar__main' elevation={0} component="nav" sx={{ position: 'fixed' }} enableColorOnDark>
+      <AppBar className='navbar__main' elevation={0} component="nav" sx={{ position: 'fixed', background: 'var(--background-hex)' }} enableColorOnDark>
         <Toolbar>
           <IconButton
             color="inherit"
@@ -97,7 +97,12 @@ function DrawerAppBar(props) {
           </Box>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
             {navItems.map((item, i) => (
-              <Button key={item} className='app-bar__button' sx={{ color: '#fff' }}>
+              <Button key={item}
+                className='app-bar__button'
+                sx={{
+                  color: '#fff', fontSize: '1.5rem'
+                }}
+              >
                 <Link href={pageNames[i]}>{item}</Link>
               </Button>
             ))}
