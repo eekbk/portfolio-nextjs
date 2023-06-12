@@ -22,13 +22,13 @@ export default function ProjectEntry({ project }) {
         {imgSrc && <Image className={styles.project__video} src={imgSrc} width={320} height={180} alt='Spaceballs Now is Now gif' />}
       <div className={styles.project__links}>
       {repo &&
-        <Link className={styles.project__link} href={repo}>
+        <Link className={styles.project__link} href={repo} target='_blank'>
           Github Repo
           <div>
             <Image src='/github-logo.png' alt='github icon' width={30} height={30} />
           </div>
         </Link>}
-      {url && <Link className={styles.project__link} href={longUrl}>
+      {url && <Link className={styles.project__link} href={longUrl} target='_blank'>
           {url}
         </Link>}
       </div>
