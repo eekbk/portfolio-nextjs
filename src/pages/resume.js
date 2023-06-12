@@ -1,25 +1,42 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import styles from '@/styles/About.module.css'
+import styles from '@/styles/Resume.module.css'
+import Button from '@mui/material/Button'
+import FileDownloadIcon from '@mui/icons-material/FileDownload';
 
-function About() {
+function Resume() {
   return (
     <div className={styles.pageContainer}>
-
-      <section className={styles.description}>
+      <section className={styles.heading}>
+      <Button
+        variant="outlined"
+        endIcon={<FileDownloadIcon />}
+        // href='Eric_Kuehnemann_Resume.pdf'
+        sx={{
+          color: 'white',
+          border: '2px solid #ffc857',
+          '&:hover': {
+            border: '2px solid #6369d1'
+          }
+        }}
+      >      <a href='Eric_Kuehnemann_Resume.pdf' download>DOWNLOAD .PDF </a>
+      </Button>
+      {/* <section >
+      <a className={styles.pdfDownloadButton} href='Eric_Kuehnemann_Resume.pdf' download>DOWNLOAD .PDF <FileDownloadIcon className={styles.downloadIcon}/></a>
+      </section> */}
       </section>
       <h1 className={`${styles.title} ${styles.textDivider}`}>
         CERTIFICATIONS
       </h1>
         <section className={styles.certs}>
-        <Link className={styles.cert} href='https://www.credly.com/badges/73f92df7-a49d-4602-b09a-fb58ee3c293e/public_url'>
+        <Link className={styles.cert} href='https://www.credly.com/badges/73f92df7-a49d-4602-b09a-fb58ee3c293e/public_url' target='_blank'>
           <div id={styles.awsBadge} className={styles.imageContainer}
           >
             <Image className={styles.image} src='/AWS-badge.png' width={150} height={150} alt='AWS Certified Cloud Practitioner Badge' />
           </div>
           <p className={styles.cert__description}>AWS Certified Cloud Practitioner</p>
         </Link>
-        <Link className={styles.cert} href='https://bcert.me/sywjtccit'>
+        <Link className={styles.cert} href='https://bcert.me/sywjtccit' target='_blank'>
           <div className={styles.imageContainer}>
           <Image className={styles.image} src='/CSM-badge.png' width={150} height={150} alt='AWS Certified Cloud Practitioner Badge' />
           </div>
@@ -157,5 +174,5 @@ function About() {
   )
 }
 
-export default About
+export default Resume
 // https://drive.google.com/file/d/1MGS5I6NUy6pR5tbiuzLU-oF9NiIQP9Zs/view?usp=sharing

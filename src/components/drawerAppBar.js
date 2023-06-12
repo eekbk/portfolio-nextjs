@@ -18,8 +18,8 @@ import MenuIcon from '@mui/icons-material/Menu'
 import Link from 'next/link'
 
 const drawerWidth = 240
-const navItems = ['Projects', 'About', 'Contact']
-const pageNames = ['projects', 'about', 'contact']
+const navItems = ['Resume', 'Projects', 'Contact']
+const pageNames = ['resume', 'projects', 'contact']
 
 function DrawerAppBar(props) {
   const { window } = props
@@ -32,13 +32,6 @@ function DrawerAppBar(props) {
   const drawer = (
     <Box className='drawer-box' onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
       <Link href="/" className='ek-logo'>
-        {/* <Image
-          src="/ek-logo-black.png"
-          alt="13"
-          width={80}
-          height={80}
-          priority
-        /> */}
         EK
       </Link>
       <Divider />
