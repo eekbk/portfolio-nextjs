@@ -57,11 +57,11 @@ function Contact() {
   return (
     <div className={styles.pageContainer}>
       <section className={styles.links}>
-        <Link className={styles.link} href='https://github.com/eekbk'>
+        <Link className={styles.link} href='https://github.com/eekbk' target='_blank'>
           Github
           <Image src='/github-logo.png' alt='github icon' height={30} width={30}/>
         </Link>
-        <Link className={styles.link} href='https://www.linkedin.com/in/eekeric/'>
+        <Link className={styles.link} href='https://www.linkedin.com/in/eekeric/' target='_blank'>
           Linkedin
           <Image src='/linkedin-logo.png' alt='linkedin icon' height={30} width={30}/>
         </Link>
