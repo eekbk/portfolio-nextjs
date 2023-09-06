@@ -5,7 +5,8 @@ import {
   projectTwo,
   projectThree,
   projectFour,
-  projectFive
+  projectFive,
+  projectSix
 } from '@/lib/data/projectsData'
 import styles from '@/styles/Projects.module.css'
 
@@ -25,6 +26,7 @@ export default function Projects() {
           <ProjectEntry project={projectThree}/>
           <ProjectEntry project={projectFour}/>
           <ProjectEntry project={projectFive}/>
+          <ProjectEntry project={projectSix}/>
         </div>
     )
   )
