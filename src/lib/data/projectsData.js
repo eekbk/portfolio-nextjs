@@ -1,4 +1,20 @@
-export const projectFour = {
+export const projectOne = {
+  title: 'CoHive Software',
+  description: 'Frontend Responsive app for Software Company',
+  technologies: [
+    'TypeScript',
+    'React',
+    'Next.js',
+    'Tailwind CSS',
+    'Nodemailer',
+  ],
+  url: 'www.cohivesoftware.com',
+  longUrl: 'https://www.cohivesoftware.com',
+  vidSrc: '/CohiveSoftware_Demo.mp4',
+  repo: 'https://github.com/CoHive-Software/CoHive-Site'
+}
+
+export const projectFive = {
   title: 'FridgeFriend',
   description:
     'An app connecting community fridges to people in need of help as well as people with resources to share',
@@ -17,7 +33,7 @@ export const projectFour = {
   inDev: true
 }
 
-export const projectOne = {
+export const projectTwo = {
   title: 'The Watch Party',
   description:
     'A web app for people to chat while synchronously watching YouTube videos',
@@ -37,7 +53,7 @@ export const projectOne = {
   repo: 'https://github.com/felcoden/WatchParty'
 }
 
-export const projectTwo = {
+export const projectThree = {
   title: 'HolisticYou',
   description:
     'A web app to keep track of your daily physical, mental, and emotional well-being',
@@ -46,7 +62,7 @@ export const projectTwo = {
   repo: 'https://github.com/cowbirb/holistic-health'
 }
 
-export const projectFive = {
+export const projectSix = {
   title: 'Veterinary Care Accessibility Project',
   description:
     'A web app for Veterinary Hospitals to assess their accessibility to their community',
@@ -55,7 +71,7 @@ export const projectFive = {
   inDev: true
 }
 
-export const projectThree = {
+export const projectFour = {
   title: 'Portfolio',
   description:
     'The portfolio site you are looking at RIGHT NOW',
