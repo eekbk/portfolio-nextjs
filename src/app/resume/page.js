@@ -1,6 +1,7 @@
+'use client'
 import Image from 'next/image'
 import Link from 'next/link'
-import styles from '@/styles/Resume.module.css'
+import styles from './Resume.module.css'
 import Button from '@mui/material/Button'
 import FileDownloadIcon from '@mui/icons-material/FileDownload';
 
@@ -21,9 +22,6 @@ function Resume() {
         }}
       >      <a href='Eric_Kuehnemann_Resume.pdf' download>DOWNLOAD .PDF </a>
       </Button>
-      {/* <section >
-      <a className={styles.pdfDownloadButton} href='Eric_Kuehnemann_Resume.pdf' download>DOWNLOAD .PDF <FileDownloadIcon className={styles.downloadIcon}/></a>
-      </section> */}
       </section>
       <h1 className={`${styles.title} ${styles.textDivider}`}>
         CERTIFICATIONS

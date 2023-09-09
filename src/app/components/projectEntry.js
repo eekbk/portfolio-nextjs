@@ -1,7 +1,8 @@
+'use client'
 import Link from 'next/link'
 import Image from 'next/image'
 import { LaunchOutlined } from '@mui/icons-material'
-import styles from '@/styles/Projects.module.css'
+import styles from '@/app/projects/Projects.module.css'
 
 export default function ProjectEntry({ project }) {
   const { title, description, technologies, vidSrc, imgSrc, repo, url, longUrl, gif, inDev = false } = project

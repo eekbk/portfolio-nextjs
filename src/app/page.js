@@ -1,12 +1,10 @@
-import { useState, useEffect } from 'react'
 import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from '@/styles/Home.module.css'
+import styles from './Home.module.css'
 import Link from 'next/link'
 
 // const inter = Inter({ subsets: ['latin'] })
 
-export default function Home() {
+export default function Page() {
 
   return (
     <div className={styles.container}>
