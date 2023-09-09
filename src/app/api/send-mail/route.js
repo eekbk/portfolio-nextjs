@@ -13,7 +13,7 @@ export async function POST(request) {
     from: process.env.SMTP_EMAIL_ADDRESS,
     to: process.env.MAIN_EMAIL,
     cc: process.env.CC_EMAIL,
-    subject: req.subject,
+    subject: `DEF from erickue.dev: ${req.subject}`,
     text: `Name: ${req.name}
     Email: ${req.email}
     Company: ${req.company}
