@@ -36,7 +36,7 @@ function Contact() {
       )
       setResponseMessage({
         isSuccessful: true,
-        message: 'Thank you. Your message has been sent.',
+        message: 'Thanks for reaching out! I will get back to you soon.',
       })
       setValues({
         email: '',

@@ -16,7 +16,7 @@ const AlertModal = ({ isDialogOpen, handleDialogClose, responseMessage }) => {
     >
       <DialogTitle id="dialog-title">
         {responseMessage?.isSuccessful
-          ? 'Message Sent!'
+          ? 'Message Sent'
           : 'Message NOT sent...'}
       </DialogTitle>
       <DialogContent>{responseMessage.message}</DialogContent>
