@@ -47,7 +47,7 @@ function Resume() {
           <h2 className={styles.job__company}>CoHive Software</h2>
           <h3 className={styles.job__position}>Software Developer (Contract)</h3>
           <div className={styles.job__dateAndLoc}>
-            <h4 className={styles.job__date}>April 2022-Present</h4>
+            <h4 className={styles.job__date}>April 2023 - Present</h4>
             <h4 className={styles.job__location}>Remote</h4>
           </div>
           <ul className={styles.job__duties}>
@@ -64,7 +64,7 @@ function Resume() {
           <h2 className={styles.job__company}>Veterinary Care Accessibility Project</h2>
           <h3 className={styles.job__position}>Fullstack Software Developer (Contract)</h3>
           <div className={styles.job__dateAndLoc}>
-            <h4 className={styles.job__date}>2022-Current</h4>
+            <h4 className={styles.job__date}>Jan 2023 - April 2023</h4>
             <h4 className={styles.job__location}>Remote</h4>
           </div>
           <ul className={styles.job__duties}>
@@ -83,7 +83,7 @@ function Resume() {
           <h2 className={styles.job__company}>W Hotel New York - Times Square</h2>
           <h3 className={styles.job__position}>Ambassador</h3>
           <div className={styles.job__dateAndLoc}>
-            <h4 className={styles.job__date}>2012-2022</h4>
+            <h4 className={styles.job__date}>May 2012 - April 2022</h4>
             <h4 className={styles.job__location}>New York, NY</h4>
           </div>
           <ul className={styles.job__duties}>
