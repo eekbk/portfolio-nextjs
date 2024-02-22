@@ -5,18 +5,20 @@
   justify-content: space-around;
   padding: 1.5rem;
   height: 100%;
-  position: absolute;
+  max-height: calc(100vh - 4rem);
 }
 
 .imageContainer {
-  width: 100%;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .image {
-  object-fit: contain;
-  width: 100% !important;
-  position: relative !important;
-  height: unset !important;
+  width: 100%;
+  height: auto;
+  max-height: 100%;
 }
 
 .description {
@@ -27,6 +29,18 @@
   color: #ffc857;
 }
 
+@media (max-height: 30rem) {
+  .imageContainer {
+    width: auto;
+    height: 100%;
+  }
+
+  .image {
+    height: 100%;
+    width: auto;
+  }
+}
+
 @media (min-width: 40rem) {
   .container {
     flex-direction: row;
@@ -34,7 +48,6 @@
     justify-content: space-between;
     padding-left: 4rem;
     margin: 4rem;
-
   }
 
   .description {
@@ -43,13 +56,21 @@
     width: 50%;
   }
 
-  .imageContainer {
-    width: 50%;
-  }
+
 }
 
 @media (min-width: 60rem) {
   .description{
     font-size: 2.5rem;
+  }
+
+  .imageContainer {
+    width: auto;
+    height: 100%;
+  }
+
+  .image {
+    height: 100%;
+    width: auto;
   }
 }
