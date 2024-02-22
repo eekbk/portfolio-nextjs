@@ -44,6 +44,23 @@ function Resume() {
       <h1 className={`${styles.title} ${styles.textDivider}`}>EMPLOYMENT</h1>
       <section className={styles.jobs}>
         <div className={styles.job}>
+          <h2 className={styles.job__company}>CoHive Software</h2>
+          <h3 className={styles.job__position}>Software Developer (Contract)</h3>
+          <div className={styles.job__dateAndLoc}>
+            <h4 className={styles.job__date}>April 2022-Present</h4>
+            <h4 className={styles.job__location}>Remote</h4>
+          </div>
+          <ul className={styles.job__duties}>
+            <li className={styles.job__duty}>
+            Refactor MongoDB database from a relational model to leverage noSQL capabilities, significantly enhancing data retrieval speeds and reducing server load. This optimization led to noticeable improvements in application performance and scalability.
+            </li>
+            <li className={styles.job__duty}>
+            Convert complex Figma wireframes into responsive mobile app UI/UX with React Native, effectively aligning with project specifications and stakeholder expectations
+            </li>
+          </ul>
+        </div>
+        {/**TODO: STOP */}
+        <div className={styles.job}>
           <h2 className={styles.job__company}>Veterinary Care Accessibility Project</h2>
           <h3 className={styles.job__position}>Fullstack Software Developer (Contract)</h3>
           <div className={styles.job__dateAndLoc}>
@@ -55,13 +72,10 @@ function Resume() {
               Develop b2b application designed for veterinary hospitals to rate their own accessibility to their communities
             </li>
             <li className={styles.job__duty}>
-              Translate client’s formula-driven .xlsx into page flow, dependent on user input, with multi-dimensional branching logic
+            Translate 20+ complex Excel formulas into an intuitive web application interface, enhancing user experience.
             </li>
             <li className={styles.job__duty}>
-              Convert client’s Figma wireframe into pixel for pixel UI/UX
-            </li>
-            <li className={styles.job__duty}>
-              Utilize Agile methodologies to communicate with client and update app continuously
+            Implement advanced web analytics tools, enabling the company to gain deeper insights into user behavior and drive data-informed decisions for website optimization
             </li>
           </ul>
         </div>
@@ -74,14 +88,9 @@ function Resume() {
           </div>
           <ul className={styles.job__duties}>
             <li className={styles.job__duty}>
-              Delivered repeat customers by creating a warm and welcoming environment for guests
+            Excelled in a fast-paced, high-pressure environment, developing and leveraging key skills in communication, problem-solving, and teamwork. Recognized for outstanding customer service and adaptability, significantly contributing to improved customer satisfaction and repeat business.
             </li>
-            <li className={styles.job__duty}>
-              Increased hotel’s rating on Tripadvisor, with positive customer reviews mentioning me by name, by resolving issues through problem-solving, creativity, communication, adaptability and teamwork
-            </li>
-            <li className={styles.job__duty}>
-              Worked in a fast-paced atmosphere, adapted to unique and novel situations
-            </li>
+
           </ul>
         </div>
       </section>
@@ -118,6 +127,7 @@ function Resume() {
           <h2 className={styles.tech__categoryName}>Libraries/<br/>Frameworks</h2>
           <ul className={styles.tech__items}>
             <li className={styles.tech__item}>React</li>
+            <li className={styles.tech__item}>React Native</li>
             <li className={styles.tech__item}>Redux</li>
             <li className={styles.tech__item}>Angular</li>
             <li className={styles.tech__item}>Express</li>
@@ -165,6 +175,7 @@ function Resume() {
             <li className={styles.tech__item}>CI/CD</li>
             <li className={styles.tech__item}>IDE</li>
             <li className={styles.tech__item}>MVC</li>
+            <li className={styles.tech__item}>DevTools</li>
           </ul>
         </div>
       </section>
