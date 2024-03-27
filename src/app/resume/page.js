@@ -4,6 +4,8 @@ import Link from 'next/link'
 import styles from './Resume.module.css'
 import Button from '@mui/material/Button'
 import FileDownloadIcon from '@mui/icons-material/FileDownload';
+import awsBadge from '../../../public/AWS-badge.png'
+import csmBadge from '../../../public/CSM-badge.png'
 
 function Resume() {
   return (
@@ -30,13 +32,19 @@ function Resume() {
         <Link className={styles.cert} href='https://www.credly.com/badges/73f92df7-a49d-4602-b09a-fb58ee3c293e/public_url' target='_blank'>
           <div id={styles.awsBadge} className={styles.imageContainer}
           >
-            <Image className={styles.image} src='/AWS-badge.png' width={150} height={150} alt='AWS Certified Cloud Practitioner Badge' />
+            <Image
+              className={styles.image}
+              src={awsBadge}
+              alt='AWS Certified Cloud Practitioner Badge' />
           </div>
           <p className={styles.cert__description}>AWS Certified Cloud Practitioner</p>
         </Link>
         <Link className={styles.cert} href='https://bcert.me/sywjtccit' target='_blank'>
           <div className={styles.imageContainer}>
-          <Image className={styles.image} src='/CSM-badge.png' width={150} height={150} alt='AWS Certified Cloud Practitioner Badge' />
+          <Image
+            className={styles.image}
+            src={csmBadge}
+            alt='AWS Certified Cloud Practitioner Badge' />
           </div>
           <p className={styles.cert__description}>Certified ScrumMaster</p>
         </Link>

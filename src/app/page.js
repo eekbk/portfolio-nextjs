@@ -14,7 +14,8 @@ export default function Page() {
         <Image
           src={robotPic}
           className={styles.image}
-          alt="friendly robot picking flowers"/>
+          alt="friendly robot picking flowers"
+        />
       </div>
     </div>
   )
